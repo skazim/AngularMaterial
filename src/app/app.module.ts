@@ -9,7 +9,7 @@ import { Routes, RouterModule } from "@angular/router";
 const routes: Routes = [
 
   { path: 'demo', loadChildren: './demo/demo.module#DemoModule' },
-  { path: '*', redirectTo: 'demo' }
+  { path: '**', redirectTo: 'demo' }
 ]
 @NgModule({
   declarations: [
